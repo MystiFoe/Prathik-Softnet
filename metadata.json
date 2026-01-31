@@ -1,0 +1,7 @@
+{
+  "name": "Prathik Soft-Net | MIGSAK AI Lab",
+  "description": "A high-performance, minimalist intelligence-driven platform for enterprise software and networking solutions, built on the MIGSAK DNA.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
