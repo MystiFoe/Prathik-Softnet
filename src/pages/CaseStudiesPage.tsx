@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { HERO, CASE_STUDIES, COMPANY } from '@/data/content';
+import { HERO, CASE_STUDIES, COMPANY, SEO } from '@/data/content';
 import { Icons } from '@/utils/icons';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import SectionHeading from '@/components/ui/SectionHeading';
+import PageMeta from '@/components/ui/PageMeta';
 
 export function CaseStudiesLanding() {
   return (
     <>
+      <PageMeta title={SEO.caseStudies.title} description={SEO.caseStudies.description} canonical="https://prathiksoftnet.com/case-studies" />
       <section className="relative py-20 bg-gradient-to-br from-secondary-900 via-primary-800 to-secondary-900">
         <div className="container-custom relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight">{HERO.caseStudies.headline}</h1>
@@ -28,7 +30,7 @@ export function CaseStudiesLanding() {
       <section className="py-16 bg-primary-500">
         <div className="container-custom text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Let Us Build Your Success Story</h2>
-          <p className="text-primary-100 mb-8 max-w-xl mx-auto">Join 200+ organizations that trust Prathik Softnet with their IT infrastructure.</p>
+          <p className="text-primary-100 mb-8 max-w-xl mx-auto">Join the organizations that trust Prathik Softnet with their IT infrastructure.</p>
           <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-white text-primary-600 font-semibold rounded-xl hover:bg-gray-50">
             Start Your Project <Icons.arrowRight size={18} className="ml-2" />
           </Link>

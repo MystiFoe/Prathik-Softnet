@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Main switch chassis -->
+  <rect x="20" y="62" width="160" height="76" rx="5" stroke="#1e40af" stroke-width="2" fill="none"/>
+
+  <!-- Top bezel strip -->
+  <line x1="20" y1="80" x2="180" y2="80" stroke="#1e40af" stroke-width="1.5"/>
+
+  <!-- Brand / model label area -->
+  <rect x="30" y="67" width="36" height="8" rx="2" stroke="#60a5fa" stroke-width="1" fill="none"/>
+  <line x1="34" y1="71" x2="62" y2="71" stroke="#60a5fa" stroke-width="0.8"/>
+
+  <!-- Status LEDs on top bezel -->
+  <circle cx="120" cy="71" r="2" stroke="#1e40af" stroke-width="1.2" fill="#60a5fa"/>
+  <circle cx="128" cy="71" r="2" stroke="#1e40af" stroke-width="1.2" fill="#60a5fa"/>
+  <circle cx="136" cy="71" r="2" stroke="#1e40af" stroke-width="1.2" fill="none"/>
+  <!-- System power LED -->
+  <circle cx="148" cy="71" r="2.5" stroke="#1e40af" stroke-width="1.5" fill="#60a5fa"/>
+  <!-- Mode button -->
+  <rect x="158" y="67" width="12" height="8" rx="2" stroke="#1e40af" stroke-width="1.2" fill="none"/>
+  <line x1="162" y1="71" x2="166" y2="71" stroke="#60a5fa" stroke-width="1"/>
+
+  <!-- Ethernet ports - Row 1 (top row of 12 ports) -->
+  <rect x="28" y="86" width="11" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <rect x="42" y="86" width="11" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <rect x="56" y="86" width="11" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <rect x="70" y="86" width="11" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <rect x="84" y="86" width="11" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <rect x="98" y="86" width="11" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <rect x="112" y="86" width="11" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <rect x="126" y="86" width="11" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <rect x="140" y="86" width="11" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <rect x="154" y="86" width="11" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <!-- RJ45 internal lines Row 1 -->
+  <line x1="31" y1="89" x2="36" y2="89" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="31" y1="91" x2="36" y2="91" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="45" y1="89" x2="50" y2="89" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="45" y1="91" x2="50" y2="91" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="59" y1="89" x2="64" y2="89" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="59" y1="91" x2="64" y2="91" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="73" y1="89" x2="78" y2="89" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="73" y1="91" x2="78" y2="91" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="87" y1="89" x2="92" y2="89" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="87" y1="91" x2="92" y2="91" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="101" y1="89" x2="106" y2="89" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="101" y1="91" x2="106" y2="91" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="115" y1="89" x2="120" y2="89" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="115" y1="91" x2="120" y2="91" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="129" y1="89" x2="134" y2="89" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="129" y1="91" x2="134" y2="91" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="143" y1="89" x2="148" y2="89" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="143" y1="91" x2="148" y2="91" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="157" y1="89" x2="162" y2="89" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="157" y1="91" x2="162" y2="91" stroke="#60a5fa" stroke-width="0.6"/>
+
+  <!-- Ethernet ports - Row 2 (bottom row of 12 ports) -->
+  <rect x="28" y="100" width="11" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <rect x="42" y="100" width="11" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <rect x="56" y="100" width="11" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <rect x="70" y="100" width="11" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <rect x="84" y="100" width="11" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <rect x="98" y="100" width="11" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <rect x="112" y="100" width="11" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <rect x="126" y="100" width="11" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <rect x="140" y="100" width="11" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <rect x="154" y="100" width="11" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <!-- RJ45 internal lines Row 2 -->
+  <line x1="31" y1="103" x2="36" y2="103" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="31" y1="105" x2="36" y2="105" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="45" y1="103" x2="50" y2="103" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="45" y1="105" x2="50" y2="105" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="59" y1="103" x2="64" y2="103" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="59" y1="105" x2="64" y2="105" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="73" y1="103" x2="78" y2="103" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="73" y1="105" x2="78" y2="105" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="87" y1="103" x2="92" y2="103" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="87" y1="105" x2="92" y2="105" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="101" y1="103" x2="106" y2="103" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="101" y1="105" x2="106" y2="105" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="115" y1="103" x2="120" y2="103" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="115" y1="105" x2="120" y2="105" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="129" y1="103" x2="134" y2="103" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="129" y1="105" x2="134" y2="105" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="143" y1="103" x2="148" y2="103" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="143" y1="105" x2="148" y2="105" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="157" y1="103" x2="162" y2="103" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="157" y1="105" x2="162" y2="105" stroke="#60a5fa" stroke-width="0.6"/>
+
+  <!-- Link activity LEDs between port rows -->
+  <circle cx="33" cy="98" r="1" fill="#60a5fa"/>
+  <circle cx="47" cy="98" r="1" fill="#60a5fa"/>
+  <circle cx="61" cy="98" r="1" fill="#60a5fa"/>
+  <circle cx="75" cy="98" r="1" fill="#60a5fa"/>
+  <circle cx="89" cy="98" r="1" fill="#60a5fa"/>
+  <circle cx="103" cy="98" r="1" fill="#60a5fa"/>
+  <circle cx="117" cy="98" r="1" fill="#1e40af"/>
+  <circle cx="131" cy="98" r="1" fill="#1e40af"/>
+  <circle cx="145" cy="98" r="1" fill="#1e40af"/>
+  <circle cx="159" cy="98" r="1" fill="#1e40af"/>
+
+  <!-- SFP+ uplink ports (right side, larger) -->
+  <rect x="28" y="116" width="16" height="14" rx="2" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <rect x="48" y="116" width="16" height="14" rx="2" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <!-- SFP+ internal detail -->
+  <rect x="31" y="119" width="10" height="8" rx="1" stroke="#60a5fa" stroke-width="0.8" fill="none"/>
+  <rect x="51" y="119" width="10" height="8" rx="1" stroke="#60a5fa" stroke-width="0.8" fill="none"/>
+  <!-- SFP+ labels -->
+  <line x1="32" y1="122" x2="40" y2="122" stroke="#60a5fa" stroke-width="0.5"/>
+  <line x1="52" y1="122" x2="60" y2="122" stroke="#60a5fa" stroke-width="0.5"/>
+
+  <!-- Console port -->
+  <rect x="74" y="118" width="14" height="10" rx="2" stroke="#60a5fa" stroke-width="1.2" fill="none"/>
+  <line x1="78" y1="123" x2="84" y2="123" stroke="#60a5fa" stroke-width="0.8"/>
+
+  <!-- Ventilation holes on right side -->
+  <circle cx="140" cy="120" r="1.5" stroke="#60a5fa" stroke-width="0.8" fill="none"/>
+  <circle cx="147" cy="120" r="1.5" stroke="#60a5fa" stroke-width="0.8" fill="none"/>
+  <circle cx="154" cy="120" r="1.5" stroke="#60a5fa" stroke-width="0.8" fill="none"/>
+  <circle cx="161" cy="120" r="1.5" stroke="#60a5fa" stroke-width="0.8" fill="none"/>
+  <circle cx="140" cy="128" r="1.5" stroke="#60a5fa" stroke-width="0.8" fill="none"/>
+  <circle cx="147" cy="128" r="1.5" stroke="#60a5fa" stroke-width="0.8" fill="none"/>
+  <circle cx="154" cy="128" r="1.5" stroke="#60a5fa" stroke-width="0.8" fill="none"/>
+  <circle cx="161" cy="128" r="1.5" stroke="#60a5fa" stroke-width="0.8" fill="none"/>
+
+  <!-- Rack ears -->
+  <rect x="14" y="66" width="6" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <circle cx="17" cy="71" r="1.5" fill="#60a5fa"/>
+  <rect x="180" y="66" width="6" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <circle cx="183" cy="71" r="1.5" fill="#60a5fa"/>
+  <rect x="14" y="124" width="6" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <circle cx="17" cy="129" r="1.5" fill="#60a5fa"/>
+  <rect x="180" y="124" width="6" height="10" rx="1" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <circle cx="183" cy="129" r="1.5" fill="#60a5fa"/>
+</svg>

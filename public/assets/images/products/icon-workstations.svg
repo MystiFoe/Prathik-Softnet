@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <!-- === MONITOR === -->
+  <!-- Monitor screen bezel -->
+  <rect x="52" y="18" width="96" height="64" rx="4" stroke="#1e40af" stroke-width="2" fill="none"/>
+  <!-- Screen inner area -->
+  <rect x="58" y="24" width="84" height="48" rx="2" stroke="#60a5fa" stroke-width="1" fill="none"/>
+  <!-- Screen content lines (representing display) -->
+  <line x1="64" y1="34" x2="108" y2="34" stroke="#60a5fa" stroke-width="0.8"/>
+  <line x1="64" y1="40" x2="96" y2="40" stroke="#60a5fa" stroke-width="0.8"/>
+  <line x1="64" y1="46" x2="118" y2="46" stroke="#60a5fa" stroke-width="0.8"/>
+  <line x1="64" y1="52" x2="102" y2="52" stroke="#60a5fa" stroke-width="0.8"/>
+  <line x1="64" y1="58" x2="112" y2="58" stroke="#60a5fa" stroke-width="0.8"/>
+  <!-- Window element on screen -->
+  <rect x="112" y="30" width="24" height="18" rx="1" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <line x1="112" y1="34" x2="136" y2="34" stroke="#60a5fa" stroke-width="0.6"/>
+  <!-- Monitor power LED -->
+  <circle cx="100" cy="76" r="1.5" fill="#60a5fa"/>
+  <!-- Monitor stand neck -->
+  <rect x="92" y="82" width="16" height="12" rx="1" stroke="#1e40af" stroke-width="2" fill="none"/>
+  <!-- Monitor stand base -->
+  <ellipse cx="100" cy="96" rx="28" ry="4" stroke="#1e40af" stroke-width="2" fill="none"/>
+
+  <!-- === TOWER WORKSTATION === -->
+  <!-- Tower case main body -->
+  <rect x="10" y="48" width="34" height="96" rx="3" stroke="#1e40af" stroke-width="2" fill="none"/>
+
+  <!-- Front panel top section (optical drive bay) -->
+  <rect x="14" y="54" width="26" height="8" rx="1" stroke="#1e40af" stroke-width="1.2" fill="none"/>
+  <line x1="17" y1="58" x2="22" y2="58" stroke="#60a5fa" stroke-width="0.8"/>
+  <circle cx="37" cy="58" r="1" fill="#60a5fa"/>
+
+  <!-- 5.25" bay cover -->
+  <rect x="14" y="66" width="26" height="6" rx="1" stroke="#60a5fa" stroke-width="0.8" fill="none"/>
+
+  <!-- Power button -->
+  <circle cx="27" cy="80" r="4" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+  <line x1="27" y1="77" x2="27" y2="79" stroke="#1e40af" stroke-width="1.5"/>
+  <!-- Power LED -->
+  <circle cx="20" cy="80" r="1.5" stroke="#1e40af" stroke-width="1" fill="#60a5fa"/>
+
+  <!-- USB ports -->
+  <rect x="16" y="88" width="8" height="4" rx="0.5" stroke="#1e40af" stroke-width="1.2" fill="none"/>
+  <rect x="16" y="94" width="8" height="4" rx="0.5" stroke="#1e40af" stroke-width="1.2" fill="none"/>
+  <!-- USB inner connector detail -->
+  <line x1="18" y1="90" x2="22" y2="90" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="18" y1="96" x2="22" y2="96" stroke="#60a5fa" stroke-width="0.6"/>
+
+  <!-- Audio jacks -->
+  <circle cx="33" cy="90" r="2" stroke="#60a5fa" stroke-width="1" fill="none"/>
+  <circle cx="33" cy="96" r="2" stroke="#60a5fa" stroke-width="1" fill="none"/>
+  <circle cx="33" cy="90" r="0.5" fill="#60a5fa"/>
+  <circle cx="33" cy="96" r="0.5" fill="#60a5fa"/>
+
+  <!-- Front mesh ventilation area -->
+  <line x1="16" y1="106" x2="38" y2="106" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="16" y1="109" x2="38" y2="109" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="16" y1="112" x2="38" y2="112" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="16" y1="115" x2="38" y2="115" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="16" y1="118" x2="38" y2="118" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="16" y1="121" x2="38" y2="121" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="16" y1="124" x2="38" y2="124" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="16" y1="127" x2="38" y2="127" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="16" y1="130" x2="38" y2="130" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="16" y1="133" x2="38" y2="133" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="16" y1="136" x2="38" y2="136" stroke="#60a5fa" stroke-width="0.6"/>
+
+  <!-- Tower feet -->
+  <rect x="12" y="144" width="8" height="3" rx="1" stroke="#1e40af" stroke-width="1.2" fill="none"/>
+  <rect x="34" y="144" width="8" height="3" rx="1" stroke="#1e40af" stroke-width="1.2" fill="none"/>
+
+  <!-- Side panel detail (screw) -->
+  <circle cx="14" cy="50" r="1.5" stroke="#60a5fa" stroke-width="0.8" fill="none"/>
+  <line x1="13.2" y1="49.2" x2="14.8" y2="50.8" stroke="#60a5fa" stroke-width="0.6"/>
+  <line x1="14.8" y1="49.2" x2="13.2" y2="50.8" stroke="#60a5fa" stroke-width="0.6"/>
+
+  <!-- === KEYBOARD === -->
+  <rect x="56" y="108" width="88" height="26" rx="3" stroke="#1e40af" stroke-width="2" fill="none"/>
+  <!-- Keyboard keys grid -->
+  <!-- Row 1 -->
+  <rect x="61" y="112" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="68" y="112" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="75" y="112" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="82" y="112" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="89" y="112" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="96" y="112" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="103" y="112" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="110" y="112" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="117" y="112" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="124" y="112" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="131" y="112" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <!-- Row 2 -->
+  <rect x="62" y="118" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="69" y="118" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="76" y="118" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="83" y="118" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="90" y="118" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="97" y="118" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="104" y="118" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="111" y="118" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="118" y="118" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="125" y="118" width="11" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <!-- Row 3 (spacebar row) -->
+  <rect x="62" y="124" width="7" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="71" y="124" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="78" y="124" width="34" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="114" y="124" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="121" y="124" width="5" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <rect x="128" y="124" width="8" height="4" rx="0.5" stroke="#60a5fa" stroke-width="0.6" fill="none"/>
+  <!-- Keyboard status LEDs -->
+  <circle cx="136" cy="111" r="1" fill="#60a5fa"/>
+  <circle cx="139" cy="111" r="1" fill="none" stroke="#60a5fa" stroke-width="0.5"/>
+
+  <!-- === MOUSE === -->
+  <!-- Mouse body -->
+  <rect x="152" y="110" width="20" height="32" rx="10" stroke="#1e40af" stroke-width="2" fill="none"/>
+  <!-- Mouse buttons divider -->
+  <line x1="162" y1="110" x2="162" y2="124" stroke="#1e40af" stroke-width="1.2"/>
+  <!-- Mouse scroll wheel -->
+  <rect x="159" y="116" width="6" height="4" rx="2" stroke="#60a5fa" stroke-width="1" fill="none"/>
+  <!-- Mouse side detail -->
+  <line x1="154" y1="128" x2="154" y2="134" stroke="#60a5fa" stroke-width="0.6"/>
+
+  <!-- === Cable connecting tower to monitor === -->
+  <path d="M 44 70 Q 50 70 52 60" stroke="#60a5fa" stroke-width="1" fill="none" stroke-dasharray="3,2"/>
+</svg>

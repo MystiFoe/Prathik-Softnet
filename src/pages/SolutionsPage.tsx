@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { HERO, SOLUTIONS, CASE_STUDIES, COMPANY } from '@/data/content';
+import { HERO, SOLUTIONS, CASE_STUDIES, COMPANY, SEO } from '@/data/content';
 import { Icons, getIcon } from '@/utils/icons';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import SectionHeading from '@/components/ui/SectionHeading';
+import PageMeta from '@/components/ui/PageMeta';
 
 export function SolutionsLanding() {
   return (
     <>
+      <PageMeta title={SEO.solutions.title} description={SEO.solutions.description} canonical="https://prathiksoftnet.com/solutions" />
       <section className="relative py-20 bg-gradient-to-br from-secondary-900 via-primary-800 to-secondary-900">
         <div className="container-custom relative z-10">
           <div className="max-w-3xl">

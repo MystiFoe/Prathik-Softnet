@@ -1,8 +1,11 @@
 import React from 'react';
-import { COMPANY } from '@/data/content';
+import { COMPANY, SEO } from '@/data/content';
+import PageMeta from '@/components/ui/PageMeta';
 
 export default function TermsPage() {
   return (
+    <>
+    <PageMeta title={SEO.terms.title} description={SEO.terms.description} canonical="https://prathiksoftnet.com/terms" />
     <section className="py-20 bg-white">
       <div className="container-custom max-w-3xl mx-auto">
         <h1 className="text-3xl font-bold text-secondary-900 mb-2">Terms of Service</h1>
@@ -39,5 +42,6 @@ export default function TermsPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }

@@ -1,9 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Icons } from '@/utils/icons';
+import { SEO } from '@/data/content';
+import PageMeta from '@/components/ui/PageMeta';
 
 export default function NotFoundPage() {
   return (
+    <>
+    <PageMeta title={SEO.notFound.title} description={SEO.notFound.description} />
     <section className="min-h-[70vh] flex items-center justify-center bg-white">
       <div className="container-custom text-center">
         <div className="text-8xl font-bold text-gray-200 mb-4">404</div>
@@ -21,5 +25,6 @@ export default function NotFoundPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }

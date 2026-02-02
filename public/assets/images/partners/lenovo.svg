@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+  <text
+    x="100"
+    y="30"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="system-ui, -apple-system, sans-serif"
+    font-size="32"
+    font-weight="normal"
+    fill="#E2231A"
+    letter-spacing="2"
+  >Lenovo</text>
+</svg>

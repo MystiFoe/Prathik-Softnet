@@ -48,16 +48,16 @@ export const COMPANY = {
 
 export const STATS = [
   { value: 7, suffix: '+', label: 'Years of Excellence', icon: 'calendar' },
-  { value: 500, suffix: '+', label: 'Projects Delivered', icon: 'check-circle' },
-  { value: 200, suffix: '+', label: 'Active Clients', icon: 'users' },
-  { value: 10, suffix: '+', label: 'Industries Served', icon: 'building' },
-  { value: 99.9, suffix: '%', label: 'Uptime Guarantee', icon: 'shield' },
+  { value: 100, suffix: '+', label: 'Projects Delivered', icon: 'check-circle' },
+  { value: 25, suffix: '+', label: 'Satisfied Clients', icon: 'users' },
+  { value: 6, suffix: '', label: 'Industries Served', icon: 'building' },
+  { value: 99, suffix: '%', label: 'Client Satisfaction', icon: 'shield' },
 ];
 
 export const HERO = {
   home: {
     headline: 'Enterprise IT Infrastructure Solutions Since 2018',
-    subheadline: 'Trusted by 200+ businesses across India for servers, storage, networking, and end-to-end IT infrastructure services.',
+    subheadline: 'Trusted by businesses across India for servers, storage, networking, and end-to-end IT infrastructure services.',
     cta1: 'Request a Quote',
     cta2: 'View Case Studies',
   },
@@ -681,7 +681,7 @@ export const INDUSTRIES: Industry[] = [
     metrics: [
       { value: '99.999%', label: 'System Availability' },
       { value: '<1ms', label: 'Transaction Latency' },
-      { value: '50+', label: 'Banking Clients' },
+      { value: '5+', label: 'Banking Clients' },
       { value: 'RBI Compliant', label: 'Infrastructure' },
     ],
     compliance: ['RBI IT Guidelines', 'PCI DSS', 'ISO 27001', 'SOC 2 Type II', 'SEBI CSCRF'],
@@ -702,7 +702,7 @@ export const INDUSTRIES: Industry[] = [
     solutions: ['HIPAA-compliant server infrastructure', 'High-capacity NAS for PACS/DICOM', 'Redundant network architecture', 'Secure remote access for telemedicine', 'Backup with compliance retention policies'],
     metrics: [
       { value: '24/7', label: 'Uptime Guarantee' },
-      { value: '30+', label: 'Healthcare Clients' },
+      { value: '5+', label: 'Healthcare Clients' },
       { value: 'PB-Scale', label: 'Imaging Storage' },
       { value: 'HIPAA', label: 'Compliant Infrastructure' },
     ],
@@ -724,7 +724,7 @@ export const INDUSTRIES: Industry[] = [
     solutions: ['Campus-wide Wi-Fi with centralized management', 'Server infrastructure for ERP and LMS', 'HPC clusters for research computing', 'Structured cabling and network infrastructure', 'Cost-effective storage for digital libraries'],
     metrics: [
       { value: '5000+', label: 'Users per Campus' },
-      { value: '25+', label: 'Education Clients' },
+      { value: '3+', label: 'Education Clients' },
       { value: '100%', label: 'Campus Coverage' },
       { value: 'NAAC', label: 'IT Standards Support' },
     ],
@@ -746,7 +746,7 @@ export const INDUSTRIES: Industry[] = [
     solutions: ['SAP-certified server platforms', 'Industrial-grade edge computing', 'Secure OT/IT network segmentation', 'WAN/SD-WAN for multi-site connectivity', 'Ruggedized networking equipment'],
     metrics: [
       { value: '99.9%', label: 'Production System Uptime' },
-      { value: '40+', label: 'Manufacturing Clients' },
+      { value: '8+', label: 'Manufacturing Clients' },
       { value: 'SAP Certified', label: 'Infrastructure' },
       { value: 'Industry 4.0', label: 'Ready' },
     ],
@@ -767,7 +767,7 @@ export const INDUSTRIES: Industry[] = [
     ],
     solutions: ['High-density compute for SaaS platforms', 'Container-ready infrastructure', 'Secure multi-tenant network architecture', 'Developer workstations with GPU support', 'DR and backup for client data protection'],
     metrics: [
-      { value: '100+', label: 'IT Company Clients' },
+      { value: '10+', label: 'IT Company Clients' },
       { value: 'Scale-Ready', label: 'Infrastructure' },
       { value: 'Multi-Cloud', label: 'Integration' },
       { value: 'SOC 2', label: 'Compliant Environments' },
@@ -790,7 +790,7 @@ export const INDUSTRIES: Industry[] = [
     solutions: ['GeM-registered procurement', 'MeitY-compliant infrastructure', 'Air-gapped secure environments', 'Government cloud-ready systems', 'Disaster recovery for e-governance'],
     metrics: [
       { value: 'GeM', label: 'Registered Vendor' },
-      { value: '20+', label: 'Government Clients' },
+      { value: '2+', label: 'Government Clients' },
       { value: 'MeitY', label: 'Compliant' },
       { value: 'Make in India', label: 'Supported' },
     ],
@@ -822,7 +822,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     id: 'cs-banking-datacenter',
     slug: 'banking-datacenter-consolidation',
     title: 'Data Center Consolidation for Leading Private Bank',
-    client: 'A leading private sector bank headquartered in Mumbai with 800+ branches across India',
+    client: 'A leading private sector bank in South India',
     industry: 'Banking & Finance',
     challenge: 'The bank operated a legacy data center with 500+ physical servers across two facilities, leading to high operational costs, power consumption, and management complexity. Many servers were running at below 15% utilization, and hardware refresh cycles were creating significant capital expenditure pressure. The bank needed to consolidate infrastructure while maintaining strict RBI compliance requirements for data residency, disaster recovery, and business continuity. Additionally, the core banking system migration had to be executed with zero downtime during banking hours.',
     solution: 'Prathik Softnet designed and implemented a server virtualization strategy using VMware vSphere on Dell PowerEdge R750 servers, consolidating 500 physical servers to 120 virtual hosts. We deployed Dell PowerStore for primary storage with synchronous replication to the DR site, Cisco Catalyst 9300 switches for the network fabric, and Fortinet FortiGate firewalls for perimeter and internal segmentation. The migration was executed in phases over 16 weeks with every cutover scheduled during non-banking hours. We also implemented Veeam backup with offsite replication and set up comprehensive monitoring with SolarWinds.',
@@ -837,15 +837,15 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
     testimonial: {
       quote: 'Prathik Softnet delivered a complex data center transformation on time and within budget. Their technical expertise and project management were exceptional. We achieved our consolidation goals without any impact to banking operations.',
-      author: 'Rajesh Krishnamurthy',
-      role: 'CTO, Leading Private Bank',
+      author: 'CTO',
+      role: 'Banking & Finance Client',
     },
   },
   {
     id: 'cs-hospital-emr',
     slug: 'hospital-emr-infrastructure',
     title: 'EMR Infrastructure for Multi-Specialty Hospital Chain',
-    client: 'A 500-bed multi-specialty hospital chain with 5 facilities across South India',
+    client: 'A multi-specialty hospital chain with facilities across South India',
     industry: 'Healthcare',
     challenge: 'The hospital chain was implementing a new Electronic Medical Records (EMR) system across all five facilities. The existing infrastructure could not support the performance requirements of the EMR platform, PACS imaging system, and real-time clinical alerts. The organization needed high-availability infrastructure that could handle concurrent access from 2000+ clinical staff, store growing DICOM imaging data, and comply with patient data privacy regulations. System downtime was unacceptable as it directly impacted patient care delivery.',
     solution: 'We designed a high-availability infrastructure with HPE ProLiant DL380 Gen11 servers in an active-passive cluster for the EMR application layer, NetApp AFF A400 all-flash storage for the database and PACS DICOM repository, and Cisco Catalyst 9200 switches for reliable campus connectivity. Each facility was connected via dedicated MPLS links with IPsec VPN backup. We implemented NetApp SnapMirror for cross-site replication, Veeam for application-consistent backups with 7-year retention for medical records, and HPE Aruba wireless for clinical mobility.',
@@ -860,15 +860,15 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
     testimonial: {
       quote: 'The infrastructure Prathik Softnet built for our EMR deployment has been rock-solid. Our clinicians experience fast, reliable access to patient records across all locations, and our IT team can manage everything efficiently.',
-      author: 'Dr. Anitha Raghavan',
-      role: 'CIO, Multi-Specialty Hospital Chain',
+      author: 'CIO',
+      role: 'Healthcare Client',
     },
   },
   {
     id: 'cs-university-network',
     slug: 'university-campus-network',
     title: 'Campus Network Refresh for Technical University',
-    client: 'A leading technical university in Bangalore with 15,000+ students and 50-acre campus',
+    client: 'A leading technical university in Bangalore',
     industry: 'Education',
     challenge: 'The university\'s network infrastructure was over 10 years old, with frequent outages affecting online learning, research, and administrative systems. The campus had dead zones with no wireless coverage, the wired network was limited to 100Mbps, and the existing access control system could not differentiate between student, faculty, and guest traffic. The university needed a modern network that could support 5000+ concurrent wireless users, provide secure segmentation between academic and administrative networks, and support bandwidth-intensive research applications.',
     solution: 'Prathik Softnet executed a complete campus network refresh deploying Cisco Catalyst 9300 switches as the campus core and distribution layer, Cisco Catalyst 9200 for access layer switching, and Cisco Meraki MR wireless access points for comprehensive campus Wi-Fi coverage. We implemented Cisco ISE for identity-based network access control, creating separate policy zones for students, faculty, researchers, and guests. The network was designed with a collapsed core architecture, 10Gbps backbone links, and fiber connectivity between all buildings. We also deployed Cisco Meraki MX at the internet edge with content filtering for the student network.',
@@ -883,15 +883,15 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
     testimonial: {
       quote: 'The network transformation has been a game-changer for our campus. Students and faculty now enjoy reliable high-speed connectivity everywhere, and our research labs have the bandwidth they need. Prathik Softnet understood our academic environment perfectly.',
-      author: 'Prof. Suresh Madhavan',
-      role: 'Director of IT, Technical University',
+      author: 'Director of IT',
+      role: 'Education Client',
     },
   },
   {
     id: 'cs-manufacturing-erp',
     slug: 'manufacturing-erp-deployment',
     title: 'SAP Infrastructure Deployment for Automotive Parts Manufacturer',
-    client: 'A tier-1 automotive parts manufacturer with 3 plants in Tamil Nadu and Karnataka',
+    client: 'A tier-1 automotive parts manufacturer in South India',
     industry: 'Manufacturing',
     challenge: 'The manufacturer was implementing SAP S/4HANA to replace legacy ERP systems across three plants. The project required infrastructure that met SAP HANA certification requirements for production workloads, provided high-availability to support 24/7 manufacturing operations, and connected all three plants with reliable low-latency links. The existing server room infrastructure was inadequate, and the company needed to build a proper data center at their headquarters while establishing DR capability at a secondary site.',
     solution: 'We built a SAP-certified infrastructure based on HPE ProLiant DL380 Gen11 servers with HPE Nimble Storage for the HANA database and application layers. The primary data center was constructed at the headquarters plant with proper cooling, power, and physical security. We deployed Fortinet FortiGate firewalls at each plant with SD-WAN connectivity for optimized inter-plant communication. HPE Nimble\'s replication capabilities were used for DR with automated failover. Lenovo ThinkStation P360 workstations were deployed for 50 SAP power users, and Cisco Meraki switches provided reliable plant-floor networking.',
@@ -906,15 +906,15 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
     testimonial: {
       quote: 'Prathik Softnet delivered SAP-certified infrastructure that met every requirement from HPE and SAP. The SD-WAN connectivity between our plants is reliable and the DR setup gives us confidence in business continuity.',
-      author: 'Venkatesh Iyer',
-      role: 'VP of IT, Automotive Parts Manufacturer',
+      author: 'VP of IT',
+      role: 'Manufacturing Client',
     },
   },
   {
     id: 'cs-ecommerce-scaling',
     slug: 'ecommerce-platform-scaling',
     title: 'E-Commerce Platform Scaling for Growing Retailer',
-    client: 'A fast-growing D2C e-commerce company based in Bangalore with national delivery operations',
+    client: 'A fast-growing D2C e-commerce company based in Bangalore',
     industry: 'IT/ITES',
     challenge: 'The e-commerce platform was experiencing severe performance degradation during sale events, handling only 5,000 concurrent users before response times spiked above 10 seconds. The company needed infrastructure that could scale to handle 50,000+ concurrent users during flash sales while maintaining sub-second page loads. Their existing single-server architecture had no redundancy, and two outages during previous sale events had resulted in significant revenue losses and brand damage.',
     solution: 'We architected a horizontally scalable infrastructure using Dell PowerEdge R650 servers for the web and application tiers behind load balancers, Pure Storage FlashArray//X for the database backend, and Cisco Catalyst 9300 switches for the data center network. The architecture was designed for auto-scaling with VMware vSphere DRS, session persistence, and database read replicas. We implemented a CDN strategy for static assets, deployed Palo Alto PA-Series firewalls for application security and WAF capabilities, and set up comprehensive monitoring with real-time alerting during sale events.',
@@ -929,8 +929,8 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
     testimonial: {
       quote: 'After two painful sale events with downtime, Prathik Softnet redesigned our infrastructure to be truly scalable. Our last three sales ran without a single hiccup, and we processed record transactions. Their team understood e-commerce performance requirements deeply.',
-      author: 'Arun Prakash',
-      role: 'CTO, D2C E-Commerce Company',
+      author: 'CTO',
+      role: 'E-Commerce Client',
     },
   },
 ];
@@ -1049,66 +1049,26 @@ export interface Testimonial {
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 't1',
-    quote: 'Prathik Softnet has been our trusted IT hardware partner for over three years. Their team consistently delivers the right solutions at competitive prices, and their after-sales support is exceptional.',
-    author: 'Arjun Mehta',
-    role: 'CTO',
-    company: 'TechFlow Global',
-    industry: 'IT/ITES',
+    quote: 'The team at Prathik Softnet delivered our server infrastructure ahead of schedule. Their technical expertise and attention to detail made our data center migration seamless.',
+    author: 'IT Director',
+    role: '',
+    company: 'Leading Manufacturing Enterprise',
+    industry: 'Manufacturing',
   },
   {
     id: 't2',
-    quote: 'When we needed to upgrade our core banking infrastructure, Prathik Softnet delivered a comprehensive solution that met all our RBI compliance requirements. Their technical depth in enterprise infrastructure is impressive.',
-    author: 'Samantha Rao',
-    role: 'VP of Technology',
-    company: 'FinVantage Solutions',
+    quote: 'We have been working with Prathik Softnet for hardware procurement since 2020. Their competitive pricing and reliable delivery have made them our go-to IT infrastructure partner.',
+    author: 'Head of IT',
+    role: '',
+    company: 'Financial Services Company',
     industry: 'Banking & Finance',
   },
   {
     id: 't3',
-    quote: 'Our campus network transformation was handled professionally from start to finish. The project was completed on time, and the difference in network performance and reliability has been remarkable.',
-    author: 'Prof. Karan Singh',
-    role: 'Director of IT',
-    company: 'CloudScale India',
-    industry: 'Education',
-  },
-  {
-    id: 't4',
-    quote: 'We rely on Prathik Softnet for all our server and storage procurement. Their ability to source from multiple OEMs and provide best-fit recommendations rather than pushing a single brand sets them apart.',
-    author: 'Deepa Sharma',
-    role: 'IT Director',
-    company: 'Horizon Healthcare',
-    industry: 'Healthcare',
-  },
-  {
-    id: 't5',
-    quote: 'The AMC services from Prathik Softnet have reduced our infrastructure incidents by over 60%. Their proactive monitoring catches issues before they impact our operations. Well worth the investment.',
-    author: 'Vikram Reddy',
-    role: 'Head of Operations',
-    company: 'Apex Manufacturing',
-    industry: 'Manufacturing',
-  },
-  {
-    id: 't6',
-    quote: 'As a growing startup, we needed infrastructure that could scale with us without breaking the bank. Prathik Softnet designed a modular solution that has grown seamlessly as our user base expanded from 5K to 50K.',
-    author: 'Priya Nair',
-    role: 'Founder & CEO',
-    company: 'SwiftCart Technologies',
-    industry: 'IT/ITES',
-  },
-  {
-    id: 't7',
-    quote: 'Professional, transparent, and deeply knowledgeable. The SAP infrastructure they built for us has been performing flawlessly. Their understanding of both the hardware and application layer is rare.',
-    author: 'Rajiv Kapoor',
-    role: 'CIO',
-    company: 'Precision Auto Components',
-    industry: 'Manufacturing',
-  },
-  {
-    id: 't8',
-    quote: 'What impressed us most was their willingness to understand our specific needs before recommending solutions. No hard selling, just honest technical advice. That is why we have been working with them since 2019.',
-    author: 'Dr. Meera Sundaram',
-    role: 'IT Head',
-    company: 'Bangalore Diagnostics Network',
+    quote: 'Their AMC services have significantly reduced our infrastructure downtime. The proactive monitoring and quick response times give us peace of mind for our critical systems.',
+    author: 'Operations Manager',
+    role: '',
+    company: 'Healthcare Organization',
     industry: 'Healthcare',
   },
 ];
@@ -1149,27 +1109,7 @@ export const TEAM: TeamMember[] = [
   {
     name: 'Prathik P Nadig',
     role: 'Founder & CEO',
-    bio: 'Prathik founded Prathik Softnet in 2018 with a vision to make enterprise-grade IT infrastructure accessible to businesses of all sizes across India. With over a decade of experience in IT hardware sales and solution architecture, Prathik has built deep relationships with OEM partners including Dell, HP, Cisco, and Lenovo. Under his leadership, the company has grown from a Bangalore-based startup to a recognized IT infrastructure partner serving 200+ clients across banking, healthcare, manufacturing, and government sectors. Prathik holds certifications from multiple OEMs and is passionate about helping organizations modernize their IT foundations.',
-  },
-  {
-    name: 'Anand Murthy',
-    role: 'Chief Technology Officer',
-    bio: 'Anand brings 15+ years of experience in enterprise infrastructure design and implementation. Prior to joining Prathik Softnet, he led data center operations for a Fortune 500 IT services company. Anand holds VMware VCP, Cisco CCNP, and Dell Certified Professional certifications. He oversees all technical operations, solution design, and engineering teams, ensuring every project meets the highest standards of quality and reliability.',
-  },
-  {
-    name: 'Kavitha Ranganathan',
-    role: 'Head of Operations',
-    bio: 'Kavitha manages end-to-end operations including procurement, logistics, AMC operations, and client delivery. With 12 years in IT supply chain management, she has optimized our procurement processes to deliver industry-leading turnaround times. Kavitha ensures that every order, from a single workstation to a full data center build-out, is fulfilled accurately and on schedule.',
-  },
-  {
-    name: 'Siddharth Joshi',
-    role: 'Sales Director',
-    bio: 'Siddharth leads our sales and business development efforts across India. With deep expertise in enterprise IT sales and a consultative selling approach, he helps organizations identify the right infrastructure solutions for their specific needs. Siddharth manages key accounts across BFSI, healthcare, and manufacturing sectors, and has been instrumental in expanding our presence in the Delhi NCR market.',
-  },
-  {
-    name: 'Rahul Deshmukh',
-    role: 'Technical Lead - Solutions',
-    bio: 'Rahul heads our solutions engineering team, responsible for pre-sales technical consulting, solution design, and proof-of-concept deployments. A certified expert across Dell, HPE, and Cisco platforms, Rahul has designed infrastructure for some of India\'s largest enterprises. He specializes in virtualization, storage architecture, and network security design.',
+    bio: 'Prathik founded Prathik Softnet in 2018 with a vision to make enterprise-grade IT infrastructure accessible to businesses of all sizes across India. With experience in IT hardware sales and solution architecture, Prathik has built deep relationships with OEM partners including Dell, HP, Cisco, and Lenovo. Under his leadership, the company has grown from a Bangalore-based startup to a recognized IT infrastructure partner serving clients across banking, healthcare, manufacturing, and government sectors. Prathik holds certifications from multiple OEMs and is passionate about helping organizations modernize their IT foundations.',
   },
 ];
 
@@ -1181,10 +1121,10 @@ export const MILESTONES = [
   { year: 2018, title: 'Founded in Bangalore', description: 'Prathik Softnet established as an IT hardware solutions provider in Bangalore, starting with Dell and HP product lines.' },
   { year: 2019, title: 'First Major Enterprise Client', description: 'Secured first enterprise contract for a 50-server deployment at a leading Bangalore-based IT company.' },
   { year: 2020, title: 'Cisco Partnership', description: 'Became Cisco Select Partner, adding enterprise networking to our portfolio. Supported clients through COVID-19 remote work transitions.' },
-  { year: 2021, title: '100 Clients Milestone', description: 'Crossed 100 active clients milestone. Expanded team to 20+ professionals including dedicated solutions architects.' },
+  { year: 2021, title: 'Growing Client Base', description: 'Steadily expanded our client portfolio across Bangalore. Added dedicated solutions architects to the team.' },
   { year: 2022, title: 'Delhi NCR Expansion', description: 'Opened Delhi NCR branch office to serve North India market. Added HPE Gold Partner and Lenovo Authorized Partner certifications.' },
   { year: 2023, title: 'ISO Certifications', description: 'Achieved ISO 9001:2015 and ISO 27001:2018 certifications. Launched comprehensive AMC services division.' },
-  { year: 2024, title: '200+ Clients, 500+ Projects', description: 'Crossed 200 active clients and 500 project deployments. Added Pure Storage and Fortinet to our partner ecosystem.' },
+  { year: 2024, title: 'Expanded Partner Ecosystem', description: 'Added Pure Storage and Fortinet to our partner ecosystem. Continued growth across multiple industry verticals.' },
   { year: 2025, title: 'AI & Next-Gen Focus', description: 'Expanded into AI infrastructure solutions with NVIDIA partnerships. Launched consulting practice for digital transformation.' },
 ];
 
@@ -1266,7 +1206,7 @@ When choosing between these platforms, consider the following factors:
 ## Our Recommendation
 
 There is no universal "best" server. The right choice depends on your specific workload, budget, existing infrastructure, and support requirements. As authorized partners of all three vendors, Prathik Softnet can help you evaluate each platform against your requirements and deliver the best fit for your organization.`,
-    author: 'Rahul Deshmukh',
+    author: 'Prathik Softnet Team',
     date: '2025-01-15',
     category: 'Hardware',
     readTime: '8 min read',
@@ -1339,7 +1279,7 @@ A typical 50-rack data center in India costs between Rs 2-5 crore for infrastruc
 ## Partner with Experts
 
 Building a data center is a significant undertaking. Partner with an experienced infrastructure provider like Prathik Softnet who can handle everything from design through procurement, installation, and ongoing maintenance. Our team has built data centers across India and can guide you through every phase of the project.`,
-    author: 'Anand Murthy',
+    author: 'Prathik Softnet Team',
     date: '2025-01-08',
     category: 'Data Center',
     readTime: '12 min read',
@@ -1349,7 +1289,7 @@ Building a data center is a significant undertaking. Partner with an experienced
     slug: 'it-infrastructure-cost-optimization',
     title: 'IT Infrastructure Cost Optimization Strategies',
     excerpt: 'Practical strategies to reduce IT infrastructure costs without compromising performance or reliability.',
-    content: `IT infrastructure represents a significant portion of enterprise IT spending. Based on our experience optimizing infrastructure for 200+ clients, here are proven strategies to reduce costs while maintaining the performance and reliability your business demands.
+    content: `IT infrastructure represents a significant portion of enterprise IT spending. Based on our experience optimizing infrastructure for clients across industries, here are proven strategies to reduce costs while maintaining the performance and reliability your business demands.
 
 ## 1. Server Consolidation Through Virtualization
 
@@ -1463,7 +1403,7 @@ Pay-per-incident model without ongoing contract. Suitable only for non-critical 
 ## Prathik Softnet AMC Services
 
 We offer three tiers of AMC services covering Dell, HP, Cisco, Lenovo, and other OEM equipment. Our AMC clients enjoy proactive monitoring, dedicated account management, and transparent SLA reporting. Contact us for a customized AMC proposal based on your specific infrastructure.`,
-    author: 'Kavitha Ranganathan',
+    author: 'Prathik Softnet Team',
     date: '2024-12-10',
     category: 'Services',
     readTime: '6 min read',
@@ -1558,7 +1498,7 @@ We offer three tiers of AMC services covering Dell, HP, Cisco, Lenovo, and other
 ## Prevention Is Cheaper Than Recovery
 
 Every one of these mistakes is preventable with proper planning, design, and operational discipline. If you recognize any of these issues in your network, Prathik Softnet can help you assess your current state and implement improvements to build a more reliable, secure, and scalable network infrastructure.`,
-    author: 'Anand Murthy',
+    author: 'Prathik Softnet Team',
     date: '2024-11-28',
     category: 'Networking',
     readTime: '10 min read',
@@ -1570,21 +1510,9 @@ Every one of these mistakes is preventable with proper planning, design, and ope
 // ============================================================
 
 export const CLIENT_NAMES = [
-  'TechFlow Global',
-  'FinVantage Solutions',
-  'Horizon Healthcare',
-  'Apex Manufacturing',
-  'SwiftCart Technologies',
-  'Precision Auto Components',
-  'Bangalore Diagnostics Network',
-  'National Engineering College',
-  'SouthStar Insurance',
-  'BlueChip Finserv',
-  'MedConnect Hospitals',
-  'CloudScale India',
-  'DynamicWorks IT',
-  'GreenField Industries',
-  'ProBuild Infra',
+  'Pravaig Dynamics',
+  'Pravaig Energy',
+  'Atima',
 ];
 
 // ============================================================
@@ -1614,9 +1542,6 @@ export const NAV_ITEMS = [
     ],
   },
   { label: 'Industries', path: '/industries' },
-  { label: 'Case Studies', path: '/case-studies' },
-  { label: 'Partners', path: '/partners' },
-  { label: 'Blog', path: '/blog' },
   { label: 'Contact', path: '/contact' },
 ];
 
@@ -1626,12 +1551,12 @@ export const NAV_ITEMS = [
 
 export const SEO = {
   home: {
-    title: 'Prathik Softnet | Enterprise IT Hardware & Infrastructure Solutions | Bangalore & Delhi',
-    description: 'Leading IT hardware solutions provider in Bangalore and Delhi. Authorized Dell, HP, Cisco, Lenovo partner. Servers, storage, networking, AMC services for enterprises. Call +91 7019555245.',
+    title: 'Prathik Softnet | IT Hardware Solutions Bangalore & Delhi',
+    description: 'Leading IT hardware provider in Bangalore & Delhi. Authorized Dell, HP, Cisco partner. Servers, storage, networking, AMC services. Call +91 7019555245.',
   },
   about: {
     title: 'About Prathik Softnet | IT Infrastructure Company Since 2018',
-    description: 'Prathik Softnet is a trusted IT infrastructure partner serving 200+ clients across India. ISO certified, OEM authorized. Learn about our team, mission, and 7+ years of expertise.',
+    description: 'Prathik Softnet is a trusted IT infrastructure partner serving clients across India. ISO certified, OEM authorized. Learn about our mission and 7+ years of expertise.',
   },
   solutions: {
     title: 'IT Infrastructure Solutions | Hardware Procurement, Design, AMC | Prathik Softnet',
@@ -1660,6 +1585,18 @@ export const SEO = {
   contact: {
     title: 'Contact Prathik Softnet | Get a Free IT Infrastructure Consultation',
     description: 'Get in touch for enterprise IT hardware quotes, infrastructure consulting, or AMC services. Offices in Bangalore and Delhi. Call +91 7019555245 or request a quote online.',
+  },
+  privacy: {
+    title: 'Privacy Policy | Prathik Softnet',
+    description: 'Learn how Prathik Softnet collects, uses, and protects your personal information. Read our privacy policy.',
+  },
+  terms: {
+    title: 'Terms of Service | Prathik Softnet',
+    description: 'Read the terms and conditions governing the use of Prathik Softnet services and website.',
+  },
+  notFound: {
+    title: 'Page Not Found | Prathik Softnet',
+    description: 'The page you are looking for could not be found. Return to the Prathik Softnet homepage.',
   },
 };
 

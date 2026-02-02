@@ -19,7 +19,7 @@ export default function Footer() {
               <span className="text-lg font-bold text-white tracking-tight">Prathik Softnet</span>
             </Link>
             <p className="text-sm text-gray-400 mb-6 leading-relaxed">
-              Enterprise IT infrastructure solutions provider serving 200+ organizations across India since 2018. Authorized partner of Dell, HP, Cisco, and Lenovo.
+              Enterprise IT infrastructure solutions provider serving organizations across India since 2018. Authorized partner of Dell, HP, Cisco, and Lenovo.
             </p>
             <div className="flex items-center gap-3">
               <a

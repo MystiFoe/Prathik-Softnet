@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { HERO, COMPANY, FORM_OPTIONS } from '@/data/content';
+import { HERO, COMPANY, FORM_OPTIONS, SEO } from '@/data/content';
 import { Icons } from '@/utils/icons';
 import SectionHeading from '@/components/ui/SectionHeading';
+import PageMeta from '@/components/ui/PageMeta';
 
 interface FormData {
   name: string;
@@ -21,6 +22,7 @@ export default function ContactPage() {
     services: [], description: '', budget: '', contactMethod: 'Email',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const [errors, setErrors] = useState<Partial<Record<keyof FormData, string>>>({});
 
   const validate = () => {
@@ -33,10 +35,34 @@ export default function ContactPage() {
     return Object.keys(errs).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (validate()) {
-      setSubmitted(true);
+    if (!validate()) return;
+    setSubmitting(true);
+    try {
+      // TODO: Replace YOUR_FORM_ID with your actual Formspree form ID from https://formspree.io
+      const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          company: form.company,
+          industry: form.industry,
+          services: form.services.join(', '),
+          description: form.description,
+          budget: form.budget,
+          contactMethod: form.contactMethod,
+        }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      }
+    } catch {
+      // Silently handle - user can try again or call directly
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -82,6 +108,7 @@ export default function ContactPage() {
 
   return (
     <>
+      <PageMeta title={SEO.contact.title} description={SEO.contact.description} canonical="https://prathiksoftnet.com/contact" />
       <section className="relative py-20 bg-gradient-to-br from-secondary-900 via-primary-800 to-secondary-900">
         <div className="container-custom relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight">{HERO.contact.headline}</h1>

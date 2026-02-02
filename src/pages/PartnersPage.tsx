@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { HERO, PARTNERS } from '@/data/content';
+import { HERO, PARTNERS, SEO } from '@/data/content';
 import { Icons } from '@/utils/icons';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import SectionHeading from '@/components/ui/SectionHeading';
+import PageMeta from '@/components/ui/PageMeta';
 
 export default function PartnersPage() {
   return (
     <>
+      <PageMeta title={SEO.partners.title} description={SEO.partners.description} canonical="https://prathiksoftnet.com/partners" />
       <section className="relative py-20 bg-gradient-to-br from-secondary-900 via-primary-800 to-secondary-900">
         <div className="container-custom relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight">{HERO.partners.headline}</h1>

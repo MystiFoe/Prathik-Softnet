@@ -1,5 +1,16 @@
+# Prathik Softnet - Robots.txt
 User-agent: *
 Allow: /
 Disallow: /api/
+Crawl-delay: 1
 
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Sitemaps
 Sitemap: https://prathiksoftnet.com/sitemap.xml

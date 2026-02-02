@@ -2,11 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {
   HERO, STATS, SOLUTIONS, PRODUCTS, INDUSTRIES, TESTIMONIALS,
-  WHY_CHOOSE_US, PARTNERS, CASE_STUDIES, BLOG_POSTS, CLIENT_NAMES, COMPANY
+  WHY_CHOOSE_US, PARTNERS, CASE_STUDIES, BLOG_POSTS, COMPANY, SEO, CLIENT_NAMES
 } from '@/data/content';
 import { Icons, getIcon } from '@/utils/icons';
 import { useScrollAnimation, useCountUp } from '@/hooks/useScrollAnimation';
 import SectionHeading from '@/components/ui/SectionHeading';
+import PageMeta from '@/components/ui/PageMeta';
 
 function HeroSection() {
   return (
@@ -19,7 +20,7 @@ function HeroSection() {
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 rounded-full text-primary-200 text-sm font-medium mb-6 backdrop-blur-sm">
             <Icons.shield size={14} />
-            <span>Trusted by 200+ enterprises across India</span>
+            <span>Trusted IT Infrastructure Partner Since 2018</span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight">
             {HERO.home.headline}
@@ -42,9 +43,26 @@ function HeroSection() {
               {HERO.home.cta2}
             </Link>
           </div>
-          <div className="mt-12 flex items-center gap-8 flex-wrap">
-            {['Dell', 'HPE', 'Cisco', 'Lenovo'].map((p) => (
-              <span key={p} className="text-gray-400 text-sm font-medium tracking-wider uppercase">{p}</span>
+          <div className="mt-12 flex items-center gap-6 flex-wrap">
+            {[
+              { name: 'Dell', file: 'dell' },
+              { name: 'HPE', file: 'hpe' },
+              { name: 'Cisco', file: 'cisco' },
+              { name: 'Lenovo', file: 'lenovo' },
+            ].map((p) => (
+              <img
+                key={p.name}
+                src={`/assets/images/partners/${p.file}.svg`}
+                alt={`${p.name} Partner`}
+                className="h-6 w-auto opacity-50 hover:opacity-80 transition-opacity brightness-200"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                  const span = document.createElement('span');
+                  span.className = 'text-gray-400 text-sm font-medium tracking-wider uppercase';
+                  span.textContent = p.name;
+                  e.currentTarget.parentElement!.appendChild(span);
+                }}
+              />
             ))}
             <span className="text-gray-500 text-sm">& more</span>
           </div>
@@ -54,15 +72,35 @@ function HeroSection() {
   );
 }
 
-function ClientMarquee() {
+function OEMPartnerBar() {
+  const partners = [
+    { name: 'Dell Technologies', file: 'dell' },
+    { name: 'HPE', file: 'hpe' },
+    { name: 'Cisco', file: 'cisco' },
+    { name: 'Lenovo', file: 'lenovo' },
+    { name: 'Intel', file: 'intel' },
+    { name: 'NVIDIA', file: 'nvidia' },
+    { name: 'VMware', file: 'vmware' },
+    { name: 'Microsoft', file: 'microsoft' },
+  ];
   return (
-    <section className="py-8 bg-gray-50 border-y border-gray-100 overflow-hidden">
-      <div className="flex" style={{ width: '200%' }}>
-        <div className="flex shrink-0 items-center gap-16 animate-marquee">
-          {[...CLIENT_NAMES, ...CLIENT_NAMES].map((name, i) => (
-            <span key={i} className="text-sm font-semibold text-gray-400 whitespace-nowrap tracking-wide uppercase">
-              {name}
-            </span>
+    <section className="py-10 bg-gray-50 border-y border-gray-100">
+      <div className="container-custom">
+        <p className="text-center text-xs font-semibold text-secondary-400 uppercase tracking-widest mb-6">Authorized OEM Partners</p>
+        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+          {partners.map((p) => (
+            <img
+              key={p.name}
+              src={`/assets/images/partners/${p.file}.svg`}
+              alt={p.name}
+              className="h-8 md:h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+              onError={(e) => {
+                const span = document.createElement('span');
+                span.className = 'text-sm font-bold text-gray-400 uppercase tracking-wider';
+                span.textContent = p.name;
+                e.currentTarget.replaceWith(span);
+              }}
+            />
           ))}
         </div>
       </div>
@@ -71,8 +109,8 @@ function ClientMarquee() {
 }
 
 function StatCard({ value, suffix, label }: { value: number; suffix: string; label: string }) {
-  const { count, ref } = useCountUp(value === 99.9 ? 999 : value);
-  const displayCount = value === 99.9 ? (count / 10).toFixed(1) : count;
+  const { count, ref } = useCountUp(value);
+  const displayCount = count;
 
   return (
     <div ref={ref} className="text-center p-6">
@@ -221,7 +259,15 @@ function ProductPreviewCard({ product }: { product: typeof PRODUCTS[0] }) {
       }`}
     >
       <div className="h-48 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-8">
-        <Icons.server size={64} className="text-gray-300" />
+        <img
+          src={`/assets/images/products/icon-${product.category}.svg`}
+          alt={product.name}
+          className="h-24 w-auto object-contain"
+          onError={(e) => {
+            e.currentTarget.style.display = 'none';
+            e.currentTarget.parentElement!.innerHTML = '<div class="text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg></div>';
+          }}
+        />
       </div>
       <div className="p-6">
         <span className="text-xs font-semibold text-primary-500 uppercase tracking-wider">{product.brand}</span>
@@ -318,7 +364,7 @@ function TestimonialsSection() {
                   </div>
                   <div>
                     <div className="text-white font-semibold text-sm">{t.author}</div>
-                    <div className="text-gray-400 text-xs">{t.role}, {t.company}</div>
+                    <div className="text-gray-400 text-xs">{t.role ? `${t.role}, ` : ''}{t.company}</div>
                   </div>
                 </div>
               </div>
@@ -478,6 +524,108 @@ function BlogCard({ post }: { post: typeof BLOG_POSTS[0] }) {
   );
 }
 
+function QuickQuoteSection() {
+  const [form, setForm] = React.useState({ name: '', phone: '', email: '', need: '' });
+  const [submitted, setSubmitted] = React.useState(false);
+  const [submitting, setSubmitting] = React.useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!form.name || !form.phone) return;
+    setSubmitting(true);
+    try {
+      // TODO: Replace YOUR_FORM_ID with your actual Formspree form ID from https://formspree.io
+      const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      }
+    } catch {
+      // Silently handle
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  if (submitted) {
+    return (
+      <section className="py-16 bg-primary-50">
+        <div className="container-custom text-center">
+          <div className="w-16 h-16 bg-accent-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Icons.checkCircle size={32} className="text-white" />
+          </div>
+          <h3 className="text-2xl font-bold text-secondary-900 mb-2">Thank You!</h3>
+          <p className="text-secondary-500">We'll get back to you within 4 business hours.</p>
+        </div>
+      </section>
+    );
+  }
+
+  return (
+    <section className="py-16 bg-primary-50" id="quick-quote">
+      <div className="container-custom">
+        <div className="max-w-2xl mx-auto text-center mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-secondary-900 mb-3">Get a Quick Quote</h2>
+          <p className="text-secondary-500">Tell us what you need and we'll respond within 4 business hours.</p>
+        </div>
+        <form onSubmit={handleSubmit} className="max-w-xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <input
+              type="text"
+              placeholder="Your Name *"
+              required
+              value={form.name}
+              onChange={(e) => setForm(f => ({ ...f, name: e.target.value }))}
+              className="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+            />
+            <input
+              type="tel"
+              placeholder="Phone Number *"
+              required
+              value={form.phone}
+              onChange={(e) => setForm(f => ({ ...f, phone: e.target.value }))}
+              className="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+            />
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <input
+              type="email"
+              placeholder="Email Address"
+              value={form.email}
+              onChange={(e) => setForm(f => ({ ...f, email: e.target.value }))}
+              className="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+            />
+            <select
+              value={form.need}
+              onChange={(e) => setForm(f => ({ ...f, need: e.target.value }))}
+              className="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-secondary-500"
+            >
+              <option value="">What do you need?</option>
+              <option value="servers">Servers</option>
+              <option value="storage">Storage Solutions</option>
+              <option value="networking">Networking Equipment</option>
+              <option value="workstations">Workstations</option>
+              <option value="amc">AMC / Maintenance</option>
+              <option value="consulting">IT Consulting</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <button
+            type="submit"
+            disabled={submitting}
+            className="w-full px-8 py-3.5 bg-primary-500 text-white font-semibold rounded-xl hover:bg-primary-600 transition-colors shadow-sm text-base disabled:opacity-60"
+          >
+            {submitting ? 'Submitting...' : 'Request Quote'}
+          </button>
+        </form>
+      </div>
+    </section>
+  );
+}
+
 function FinalCTA() {
   return (
     <section className="py-20 bg-gradient-to-br from-primary-500 to-primary-700">
@@ -508,19 +656,44 @@ function FinalCTA() {
   );
 }
 
+function TrustedBySection() {
+  return (
+    <section className="py-12 bg-white border-b border-gray-100">
+      <div className="container-custom">
+        <p className="text-center text-xs font-semibold text-secondary-400 uppercase tracking-widest mb-8">
+          Trusted by Leading Enterprises
+        </p>
+        <div className="flex justify-center items-center gap-12 flex-wrap">
+          {CLIENT_NAMES.map((client) => (
+            <span
+              key={client}
+              className="text-xl font-semibold text-secondary-300 hover:text-secondary-500 transition-colors"
+            >
+              {client}
+            </span>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function HomePage() {
   return (
     <>
+      <PageMeta title={SEO.home.title} description={SEO.home.description} canonical="https://prathiksoftnet.com/" />
       <HeroSection />
-      <ClientMarquee />
+      <OEMPartnerBar />
+      <TrustedBySection />
       <StatsSection />
       <ServicesSection />
       <WhyUsSection />
       <ProductsPreview />
-      <IndustriesSection />
-      <TestimonialsSection />
-      <PartnersSection />
       <CaseStudyHighlight />
+      <TestimonialsSection />
+      <IndustriesSection />
+      <QuickQuoteSection />
+      <PartnersSection />
       <BlogPreview />
       <FinalCTA />
     </>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+  <text
+    x="100"
+    y="30"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="system-ui, -apple-system, sans-serif"
+    font-size="38"
+    font-weight="bold"
+    fill="#01A982"
+    letter-spacing="5"
+  >HPE</text>
+</svg>

@@ -1,8 +1,11 @@
 import React from 'react';
-import { COMPANY } from '@/data/content';
+import { COMPANY, SEO } from '@/data/content';
+import PageMeta from '@/components/ui/PageMeta';
 
 export default function PrivacyPage() {
   return (
+    <>
+    <PageMeta title={SEO.privacy.title} description={SEO.privacy.description} canonical="https://prathiksoftnet.com/privacy" />
     <section className="py-20 bg-white">
       <div className="container-custom max-w-3xl mx-auto">
         <h1 className="text-3xl font-bold text-secondary-900 mb-2">Privacy Policy</h1>
@@ -48,5 +51,6 @@ export default function PrivacyPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }

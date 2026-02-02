@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { HERO, INDUSTRIES, COMPANY } from '@/data/content';
+import { HERO, INDUSTRIES, COMPANY, SEO } from '@/data/content';
 import { Icons, getIcon } from '@/utils/icons';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import SectionHeading from '@/components/ui/SectionHeading';
+import PageMeta from '@/components/ui/PageMeta';
 
 export function IndustriesLanding() {
   return (
     <>
+      <PageMeta title={SEO.industries.title} description={SEO.industries.description} canonical="https://prathiksoftnet.com/industries" />
       <section className="relative py-20 bg-gradient-to-br from-secondary-900 via-primary-800 to-secondary-900">
         <div className="container-custom relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight">{HERO.industries.headline}</h1>

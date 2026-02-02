@@ -1,9 +1,10 @@
 import React, { useState, useMemo } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { HERO, PRODUCTS, PRODUCT_CATEGORIES, PARTNERS, COMPANY } from '@/data/content';
+import { HERO, PRODUCTS, PRODUCT_CATEGORIES, PARTNERS, COMPANY, SEO } from '@/data/content';
 import { Icons } from '@/utils/icons';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import SectionHeading from '@/components/ui/SectionHeading';
+import PageMeta from '@/components/ui/PageMeta';
 
 export default function ProductsPage() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -28,6 +29,7 @@ export default function ProductsPage() {
 
   return (
     <>
+      <PageMeta title={SEO.products.title} description={SEO.products.description} canonical="https://prathiksoftnet.com/products" />
       {/* Hero */}
       <section className="relative py-20 bg-gradient-to-br from-secondary-900 via-primary-800 to-secondary-900">
         <div className="container-custom relative z-10">
@@ -142,7 +144,7 @@ function ProductCard({ product }: { product: typeof PRODUCTS[0] }) {
       }`}
     >
       <div className="h-44 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-8">
-        <Icons.server size={56} className="text-gray-300" />
+        <img src={`/assets/images/products/icon-${product.category}.svg`} alt={product.category} className="h-20 w-20 object-contain" />
       </div>
       <div className="p-6">
         <div className="flex items-center justify-between mb-2">

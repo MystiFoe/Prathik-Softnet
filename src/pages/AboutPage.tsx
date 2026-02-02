@@ -1,12 +1,14 @@
 import React from 'react';
-import { HERO, COMPANY, TEAM, MILESTONES, CERTIFICATIONS, WHY_CHOOSE_US } from '@/data/content';
+import { HERO, COMPANY, TEAM, MILESTONES, CERTIFICATIONS, WHY_CHOOSE_US, SEO } from '@/data/content';
 import { Icons, getIcon } from '@/utils/icons';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import SectionHeading from '@/components/ui/SectionHeading';
+import PageMeta from '@/components/ui/PageMeta';
 
 export default function AboutPage() {
   return (
     <>
+      <PageMeta title={SEO.about.title} description={SEO.about.description} canonical="https://prathiksoftnet.com/about" />
       {/* Hero */}
       <section className="relative py-20 bg-gradient-to-br from-secondary-900 via-primary-800 to-secondary-900">
         <div className="container-custom relative z-10">
@@ -30,13 +32,13 @@ export default function AboutPage() {
                 What set Prathik Softnet apart from day one was a commitment to honest, consultative selling. Rather than pushing products for margins, the team focused on understanding each client's actual workload requirements and recommending the most cost-effective solution, even if that meant a less expensive product.
               </p>
               <p>
-                This approach earned trust and repeat business. Within two years, Prathik Softnet had expanded from two OEM partnerships to five, added networking and security solutions to its portfolio, and grown its client base to over 100 organizations. The team invested in building deep technical expertise, with engineers earning certifications from Dell, Cisco, VMware, and HP.
+                This approach earned trust and repeat business. Within two years, Prathik Softnet had expanded from two OEM partnerships to five, added networking and security solutions to its portfolio, and grown its client base steadily. The team invested in building deep technical expertise, with engineers earning certifications from Dell, Cisco, VMware, and HP.
               </p>
               <p>
                 In 2022, recognizing growing demand from North India, the company opened a branch office in the Delhi NCR region. The same year, Prathik Softnet achieved ISO 9001:2015 and ISO 27001:2018 certifications, formalizing the quality and security standards that had always been part of its DNA.
               </p>
               <p>
-                Today, Prathik Softnet serves over 200 active clients across banking, healthcare, education, manufacturing, and government sectors. With a team of 25+ professionals, the company delivers everything from single workstation procurement to complete data center builds, backed by comprehensive AMC services that keep client infrastructure running 24/7.
+                Today, Prathik Softnet serves clients across banking, healthcare, education, manufacturing, and government sectors. The company delivers everything from single workstation procurement to complete data center builds, backed by comprehensive AMC services that keep client infrastructure running around the clock.
               </p>
             </div>
           </div>
