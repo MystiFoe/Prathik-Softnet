@@ -35,35 +35,30 @@ export default function ContactPage() {
     return Object.keys(errs).length === 0;
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
     setSubmitting(true);
-    try {
-      // TODO: Replace YOUR_FORM_ID with your actual Formspree form ID from https://formspree.io
-      const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: form.name,
-          email: form.email,
-          phone: form.phone,
-          company: form.company,
-          industry: form.industry,
-          services: form.services.join(', '),
-          description: form.description,
-          budget: form.budget,
-          contactMethod: form.contactMethod,
-        }),
-      });
-      if (res.ok) {
-        setSubmitted(true);
-      }
-    } catch {
-      // Silently handle - user can try again or call directly
-    } finally {
-      setSubmitting(false);
-    }
+
+    const subject = encodeURIComponent(`Website Inquiry from ${form.name}`);
+    const bodyParts = [
+      `Name: ${form.name}`,
+      `Email: ${form.email}`,
+      `Phone: ${form.phone}`,
+      form.company ? `Company: ${form.company}` : '',
+      form.industry ? `Industry: ${form.industry}` : '',
+      form.services.length ? `Services: ${form.services.join(', ')}` : '',
+      form.budget ? `Budget: ${form.budget}` : '',
+      `Preferred Contact: ${form.contactMethod}`,
+      '',
+      `Requirements:`,
+      form.description,
+    ].filter(Boolean).join('\n');
+    const body = encodeURIComponent(bodyParts);
+
+    window.location.href = `mailto:${COMPANY.email}?subject=${subject}&body=${body}`;
+    setSubmitted(true);
+    setSubmitting(false);
   };
 
   const handleServiceToggle = (service: string) => {

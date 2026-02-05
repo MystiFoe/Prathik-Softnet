@@ -48,7 +48,7 @@ export const COMPANY = {
 
 export const STATS = [
   { value: 7, suffix: '+', label: 'Years of Excellence', icon: 'calendar' },
-  { value: 100, suffix: '+', label: 'Projects Delivered', icon: 'check-circle' },
+  { value: 50, suffix: '+', label: 'Projects Delivered', icon: 'check-circle' },
   { value: 25, suffix: '+', label: 'Satisfied Clients', icon: 'users' },
   { value: 6, suffix: '', label: 'Industries Served', icon: 'building' },
   { value: 99, suffix: '%', label: 'Client Satisfaction', icon: 'shield' },
